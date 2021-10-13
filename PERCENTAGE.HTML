@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   h1.exl{
+        margin: 30px;} 
+
+   h1{ color: rgba(24, 24, 82, 0.856);
+    
+  }
+  h2{
+    color:rgba(212,212,212)
+  }
+  
+  
+</style>
+
+
+
+<body>
+   <h1 class="exl"><u>Student Grades:</u></h1>
+  <h3>
+    Please Enter Your Percentage</h3>
+  
+<label><u>PERCENTAGE:</u></label>
+<input type="number" id="per" size=2 value="per">
+<input type="button" value="CHECK YOUR GRADE" onclick="grade()">
+<div id="outputDiv" style="height: 50px; width: 100%;"></div>
+</body>
+<script type="text/javascript">
+
+  function grade() {
+    var grd1 = document.getElementById('per').value ;
+    
+    if(grd1>=50 && grd1<60){
+
+  
+    var display = document.getElementById('outputDiv');
+    display.innerHTML = 'Your Grade is C ' 
+    }else if (grd1>=60 && grd1<70){
+      var display = document.getElementById('outputDiv');
+    display.innerHTML = 'Your Grade is B'
+
+    }else if(grd1>=70 && grd1<80){
+      var display = document.getElementById('outputDiv');
+    display.innerHTML = 'Your Grade is A'}
+    else if(grd1>=80 && grd1<100){
+      var display = document.getElementById('outputDiv');
+    display.innerHTML = 'Your Grade is A ONE'}
+  }     
+</script>
+
+</body>
+</html>
